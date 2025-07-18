@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap" rel="stylesheet">
+
+
+    <style>
+        body {
+            font-family: 'EB Garamond', serif;
+        }
+
+        .mercado {
+            max-height: 20px;
+            min-height: 20px;
+            background-color: rgba(128, 128, 128, 0.666);
+        }
+
+        .header {
+            min-height: 70vh;
+            background-image: url('./media/lateral_liberty.jpeg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            position: relative;
+        }
+
+        .animation1 {
+            animation: fadeIn 3s ease-in-out forwards;
+
+            position: absolute;
+            bottom: 70px;
+            left: 60px;
+        }
+
+        @keyframes fadeIn {
+            from {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        /**
+        *
+        *Implementar trigger de animación con Js
+        .animation2 {
+            animation: fadeIn1 5s ease-in-out forwards;
+        }
+
+        @keyframes fadeIn1 {
+            from {
+                transform: translateY(100%);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        */
+
+        .titulo {
+            font-size: 30px;
+            font-weight: 700;
+        }
+
+        .subtitulo {
+            font-size: 15px;
+        }
+
+        .card-custom-bg {
+            background-color: rgb(255, 255, 255);
+            /* cambia según contraste necesario */
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #0056b3;
+            transition: color 0.3s ease;
+        }
+
+        .dropdown-item:hover {
+            color: #0056b3;
+            transition: color 0.3s ease;
+        }
+
+        .footerOne {
+            background-color: rgba(129, 128, 128, 0.563);
+        }
+
+        .social:hover {
+            cursor: pointer;
+        }
+
+        #carousel-wrapper {
+            white-space: nowrap;
+            overflow: hidden;
+            max-width: 100%;
+            scroll-behavior: auto;
+            /* No animación nativa */
+        }
+
+        #carousel-track {
+            display: flex;
+            animation: scroll-carousel 20s linear infinite;
+        }
+
+        @keyframes scroll-carousel {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        /* Ocultar scrollbar en todos los navegadores */
+        #carousel-wrapper::-webkit-scrollbar {
+            display: none;
+        }
+
+        #carousel-wrapper {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        .patrocinadores {
+            min-height: 40vh;
+        }
+    </style>
+
+    <script>
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const track = document.getElementById("carousel-track");
+
+            // Duplicar las imágenes para efecto infinito visual
+            const clones = track.innerHTML;
+            track.innerHTML += clones;
+        });
+    </script>
+</head>
+
+<body>
+
+    <!--Importante diferenciar títulos y subtítulos-->
+
+    <!--Mercado-->
+    <div class="container-fluid mercado">
+        <div class="row d-flex">
+            <div class="col-6 text-center align-content-center">
+                <p style="font-size: .8rem; color: rgba(245, 245, 245, 0.777);">SF S.L. cotización</p>
+            </div>
+            <div class="col-6 text-center align-content-center">
+                <p style="font-size: .8rem; color: rgba(245, 245, 245, 0.777);">+50%</p>
+            </div>
+        </div>
+    </div>
+
+    <!--Navbar para el header-->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <img src="./media/Captura de pantalla 2025-07-04 123653.png" alt="SF Logo" width="150" height="60">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Service X</a></li>
+                            <li><a class="dropdown-item" href="#">Service X</a></li>
+                            <li><a class="dropdown-item" href="#">Service X</a></li>
+                            <li><a class="dropdown-item" href="#">Service X</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Contact us</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--Imagen y texto header-->
+    <div class="container-fluid header overflow-hidden">
+        <div class="row">
+            <div class="col-6 animation1 text-center">
+                <h3 style="color:white;" class="titulo">Steel Form</h3>
+                <h5 style="color:white;">New York</h5>
+                <p style="color:white;">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Quidem cupiditate eveniet reiciendis delectus mollitia ratione optio. Maxime pariatur eligendi,
+                    aspernatur sequi temporibus nihil non rerum tenetur tempora mollitia fugit inventore.</p>
+            </div>
+        </div>
+    </div>
+
+    <!--Siguiente sección-->
+    <section class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <img src="./media/flatiron.jpeg" alt="About us" class="img-fluid rounded-3 shadow-sm">
+                </div>
+                <div class="col-md-6 text-center">
+                    <h2 class="mb-3 titulo">Our Mission</h2>
+                    <p class="subtitulo">At SF S.L., we are committed to delivering building solutions with a human
+                        touch. Our team of
+                        experts combines years of experience with cutting-edge technology to help our clients
+                        thrive, which also helps us deliver a fine, professional final product.</p>
+                    <a href="#" class="btn btn-secondary mt-3">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Siguiente sección-->
+    <section class="py-5" style="background-color:rgba(129, 128, 128, 0.563);">
+        <div class="container-fluid text-center whatWeDo animation2">
+            <h2 class="mb-5 titulo" style="color: white;">What we offer:</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="p-4 border rounded-3 shadow-sm h-100 card-custom-bg">
+                        <h5 class="titulo">Service 1</h5>
+                        <p>Strategic advice and insights to elevate your financial decisions. Filling text</p>
+                        <img src="./media/arco_empirestate.jpeg" class="img-fluid rounded mb-3" alt="Service 1">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 border rounded-3 shadow-sm h-100 card-custom-bg">
+                        <h5 class="titulo">Service 2</h5>
+                        <p>Custom-tailored investment strategies aligned with your goals. Filling text</p>
+                        <img src="./media/lookout_far.jpeg" class="img-fluid rounded mb-3" alt="Service 2">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 border rounded-3 shadow-sm h-100 card-custom-bg">
+                        <h5 class="titulo">Service 3</h5>
+                        <p>Advanced data insights to drive smarter business outcomes. Filling text!!!!!!!!!</p>
+                        <img src="./media/manhattan_bridge.jpeg" class="img-fluid rounded mb-3" alt="Service 3">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col text-center">
+                    <a href="#" class="btn btn-secondary mt-5">See all services</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Team-->
+    <section class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0 text-center">
+                    <h2 class="mb-3 titulo">Our team</h2>
+                    <p class="subtitulo">At SF S.L., we are committed to delivering building solutions with a human
+                        touch. Our team of
+                        experts combines years of experience with cutting-edge technology to help our clients
+                        thrive, which also helps us deliver a fine, professional final product.</p>
+                </div>
+                <div class="col-md-6 text-center">
+                    <img src="./media/manhattan_skyline.jpeg" alt="About us" class="img-fluid rounded-3 shadow-sm">
+                    <a href="#" class="btn btn-secondary mt-4">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--ContactForm-->
+
+
+    <!--FAQ-->
+    <!--Footer-->
+        <div class="container-fluid footerOne">
+            <div class="row gx-0">
+                <div class="col-12 text-center">
+                </div>
+            </div>
+
+            <div id="carousel-wrapper" class="overflow-hidden" style="position: relative; min-width: 100vh;">
+                <div id="carousel-track" class="d-flex">
+                    <img src="./media/logo-placeholder-image.png" class="img-fluid mx-2" style="width: 130px;" />
+                    <img src="./media/logo-placeholder-image.png" class="img-fluid mx-2" style="width: 130px;" />
+                    <img src="./media/logo-placeholder-image.png" class="img-fluid mx-2" style="width: 130px;" />
+                    <img src="./media/logo-placeholder-image.png" class="img-fluid mx-2" style="width: 130px;" />
+                    <img src="./media/logo-placeholder-image.png" class="img-fluid mx-2" style="width: 130px;" />
+                    <img src="./media/logo-placeholder-image.png" class="img-fluid mx-2" style="width: 130px;" />
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid mt-5">
+            <div class="row text-center">
+                <div class="col text-center patrocinadores">
+                    <h4>With the support of: </h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid footerOne px-5">
+            <div class="row d-flex">
+                <div class="col-6">
+                    <img src="./media/logo_SFgris.png" alt="Logo" height="150px">
+                    <p style="font-weight: 700; margin-left: 5vh; margin-top:-40px">Steel Form SL | Specialized structures since 199X. ​</p>
+                </div>
+                <div class="col-6 mt-5 d-flex justify-content-end">
+                    <a href="" class="social"><img src="./media/logo-placeholder-image.png" alt="" height="60px"></a>
+                    <a href="" class="social"><img src="./media/logo-placeholder-image.png" alt="" height="60px"></a>
+                    <a href="" class="social"><img src="./media/logo-placeholder-image.png" alt="" height="60px"></a>
+                    <a href="" class="social"><img src="./media/logo-placeholder-image.png" alt="" height="60px"></a>
+                </div>
+            </div>
+            <div class="row border-top">
+                <div class="col px-5 mt-3">
+                    <h4>Contact info: </h4>
+                </div>
+            </div>
+        </div>
+
+</body>
+
+</html>
