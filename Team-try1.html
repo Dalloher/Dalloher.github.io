@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our team - SteelForm SL</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap" rel="stylesheet">
+    <link href="./styles_try1.css" rel="stylesheet">
+
+    <script>
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const track = document.getElementById("carousel-track");
+
+            // Duplicar las imágenes para efecto infinito visual
+            const clones = track.innerHTML;
+            track.innerHTML += clones;
+        });
+    </script>
+</head>
+
+<body>
+
+
+    <!--Mercado--> <!--UPDATE: Carrusel con titulares de prensa-->
+    <div class="container-fluid mercado">
+        <div class="row">
+            <div class="col text-center">
+                <p style="font-size: .8rem; color: rgba(245, 245, 245, 0.777);">Carrusel de titulares de prensa como el
+                    del footer</p>
+            </div>
+        </div>
+    </div>
+
+    <!--Navbar para el header-->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a href="./Home-Try1.html"><img src="./media/Captura de pantalla 2025-07-04 123653.png" alt="SF Logo"
+                    width="150" height="60" id="logoNav"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./Home-Try1.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./Team-try1.html">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./PressSpace-try1-html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./Projects-try1-html">Projects</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./Building-try1.html">Building</a></li>
+                            <li><a class="dropdown-item" href="./Financial-try1.html">Financial</a></li>
+                            <li><a class="dropdown-item" href="./RealState-try1.html">Real State</a></li>
+
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+
+                            <li><a class="dropdown-item" href="./Invest-try1.html">Invest with us</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./ContactForm-try1.html">Contact us</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--Imagen y texto header-->
+    <div class="container-fluid header overflow-hidden">
+        <div class="row">
+            <div class="col-7 animation1 text-center text-white">
+                <h3 class="titulo">Our team</h3>
+                <h4>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Quidem cupiditate eveniet reiciendis delectus mollitia ratione optio. Maxime pariatur eligendi,
+                    aspernatur sequi temporibus nihil non rerum tenetur tempora mollitia fugit inventore.</h4>
+                <h5>Need custom information? Leave your contact info, we'll write you as soon as possible!</h5>
+                <a href="./ContactForm-try1.html" class="btn btn-modern mt-5">Leave your info</a>
+            </div>
+        </div>
+    </div>
+
+    <!--Next section-->
+    <section class="py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="mb-5 titulo">Meet Our Team</h2>
+            <div class="row g-4">
+                <div class="col-4">
+                    <div class="card border-0 shadow-sm h-100 hoverAnim" data-bs-toggle="modal"
+                        data-bs-target="#myModal">
+                        <img src="./media/ppl_placeholder.jpg" class="card-img-top" alt="Team member">
+                        <div class="card-body">
+                            <h5 class="card-title titulo">Jane Doe</h5>
+                            <p class="card-text">Chief Executive Officer</p>
+                        </div>
+                    </div>
+
+                    <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="myModalLabel">Jane Doe - CEO and founder</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="./media/ppl_placeholder.jpg" alt="Team member placeholder" width="210px">
+                                    <h4 class="mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro quae excepturi qui numquam quibusdam laboriosam eaque eius quas incidunt aspernatur repellat ipsam sequi commodi recusandae id tempora quos, rem sit.</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro quae excepturi qui numquam quibusdam laboriosam eaque eius quas incidunt aspernatur repellat ipsam sequi commodi recusandae id tempora quos, rem sit.</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro quae excepturi qui numquam quibusdam laboriosam eaque eius quas incidunt aspernatur repellat ipsam sequi commodi recusandae id tempora quos, rem sit.</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro quae excepturi qui numquam quibusdam laboriosam eaque eius quas incidunt aspernatur repellat ipsam sequi commodi recusandae id tempora quos, rem sit.</p>
+                                </div>
+                                <div class="modal-footer w-100 text-center">
+                                    <p class="m-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="card border-0 shadow-sm h-100 hoverAnim">
+                        <img src="./media/ppl_placeholder.jpg" class="card-img-top" alt="Team member">
+                        <div class="card-body">
+                            <h5 class="card-title titulo">Jane Doe</h5>
+                            <p class="card-text">Chief Executive Officer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card border-0 shadow-sm h-100 hoverAnim">
+                        <img src="./media/ppl_placeholder.jpg" class="card-img-top" alt="Team member">
+                        <div class="card-body">
+                            <h5 class="card-title titulo">Jane Doe</h5>
+                            <p class="card-text">Chief Executive Officer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4 mt-2">
+                <div class="col-4">
+                    <div class="card border-0 shadow-sm h-100 hoverAnim">
+                        <img src="./media/ppl_placeholder.jpg" class="card-img-top" alt="Team member">
+                        <div class="card-body">
+                            <h5 class="card-title titulo">Jane Doe</h5>
+                            <p class="card-text">Chief Executive Officer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card border-0 shadow-sm h-100 hoverAnim">
+                        <img src="./media/ppl_placeholder.jpg" class="card-img-top" alt="Team member">
+                        <div class="card-body">
+                            <h5 class="card-title titulo">Jane Doe</h5>
+                            <p class="card-text">Chief Executive Officer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card border-0 shadow-sm h-100 hoverAnim">
+                        <img src="./media/ppl_placeholder.jpg" class="card-img-top" alt="Team member">
+                        <div class="card-body">
+                            <h5 class="card-title titulo">Jane Doe</h5>
+                            <p class="card-text">Chief Executive Officer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <div class="container-fluid footerOne">
+        <div class="row gx-0">
+            <div class="col-12 text-center">
+            </div>
+        </div>
+
+        <div id="carousel-wrapper" class="overflow-hidden" style="position: relative; min-width: 100vh;">
+            <div id="carousel-track" class="d-flex">
+                <img src="./media/logo-placeholder-image.png" class="img-fluid mx-2" style="width: 130px;" />
+                <img src="./media/logo-placeholder-image.png" class="img-fluid mx-2" style="width: 130px;" />
+                <img src="./media/logo-placeholder-image.png" class="img-fluid mx-2" style="width: 130px;" />
+                <img src="./media/logo-placeholder-image.png" class="img-fluid mx-2" style="width: 130px;" />
+                <img src="./media/logo-placeholder-image.png" class="img-fluid mx-2" style="width: 130px;" />
+                <img src="./media/logo-placeholder-image.png" class="img-fluid mx-2" style="width: 130px;" />
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row text-center">
+            <div class="col text-center patrocinadores">
+                <h4>With the support of: </h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid footerOne px-5">
+        <div class="row d-flex">
+            <div class="col-6">
+                <img src="./media/logo_SFgris.png" alt="Logo" height="150px">
+                <p style="font-weight: 700; margin-left: 5vh; margin-top:-40px">Steel Form SL | Specialized structures
+                    since 199X. ​</p>
+            </div>
+            <div class="col-6 mt-5 d-flex justify-content-end">
+                <a href="https://www.instagram.com/steelform_ny/" class="social"><img
+                        src="./media/logo-placeholder-image.png" alt="social media icon" height="60px"></a>
+                <a href="" class="social"><img src="./media/logo-placeholder-image.png" alt="social media icon"
+                        height="60px"></a>
+                <a href="" class="social"><img src="./media/logo-placeholder-image.png" alt="social media icon"
+                        height="60px"></a>
+                <a href="" class="social"><img src="./media/logo-placeholder-image.png" alt="social media icon"
+                        height="60px"></a>
+            </div>
+        </div>
+        <div class="row border-top">
+            <div class="col px-5 mt-3">
+                <h4>Contact info: </h4>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
