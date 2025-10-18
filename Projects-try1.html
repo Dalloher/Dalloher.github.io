@@ -21,51 +21,43 @@
 
 <body>
 
-   <!--Navbar para el header-->
-    <nav class="navbar navbar-expand-lg">
+ <!-- Navbar con dropdown que se abre al hacer hover -->
+    <nav class="navbar navbar-expand-lg custom-navbar">
         <div class="container-fluid">
-            <a href="./Home-Try1.html"><img src="./media/Captura de pantalla 2025-07-04 123653.png" alt="SF Logo"
-                    width="150" height="60" id="logoNav"></a>
+            <a href="./Home-Try1.html">
+                <img src="./media/Captura de pantalla 2025-07-04 123653.png" alt="SF Logo" width="150" height="60"
+                    id="logoNav">
+            </a>
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./Home-Try1.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="./Team-try1.html">Team</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="./PressSpace-try1-html">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="./Projects-try1.html">Projects</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
+                    <li class="nav-item"><a class="nav-link active" href="./Home-Try1.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="./Team-try1.html">Team</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="./PressSpace-try1.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="./Projects-try1.html">Projects</a></li>
+
+                    <!-- Dropdown con hover -->
+                    <li class="nav-item dropdown hover-dropdown">
+                        <a class="nav-link active dropdown-toggle" href="#" id="servicesDropdown" role="button">
                             Services
                         </a>
-                        <ul class="dropdown-menu">
+                        <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
                             <li><a class="dropdown-item" href="./Building-try1.html">Building</a></li>
                             <li><a class="dropdown-item" href="./Financial-try1.html">Financial</a></li>
-
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-
                             <li><a class="dropdown-item" href="./Invest-try1.html">Invest with us</a></li>
-
                         </ul>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="./ContactForm-try1.html">Contact us</a>
-                    </li>
 
+                    <li class="nav-item"><a class="nav-link active" href="./ContactForm-try1.html">Contact us</a></li>
                 </ul>
             </div>
         </div>
@@ -88,10 +80,10 @@
     <!--Timeline-->
     <section>
         <div class="container">
-            <div class="row mt-5">
+            <div class="row mt-5 px-5">
                 <div class="col-md-6 ">
 
-                    <h2 class="mb-3 titulo border-start px-2">Timeline of development</h2>
+                    <h2 class="mb-3 titulo border-start px-5">TIMELINE OF DEVELOPMENT</h2>
 
                 </div>
             </div>
@@ -104,10 +96,10 @@
 
     <!--Highlighted projects-->
     <div class="container py-5">
-        <div class="row">
+        <div class="row px-5">
             <div class="col-md-6 ">
 
-                <h2 class="mb-3 titulo border-start px-2">Highlighted Projects</h2>
+                <h2 class="mb-3 titulo border-start px-5">HIGHLIGHTED PROJECTS</h2>
 
             </div>
         </div>
@@ -149,7 +141,7 @@
 
             <div class="row">
                 <div class="col-md-6 mt-5">
-                    <h2 class="mb-3 titulo border-start px-2">Project library</h2>
+                    <h2 class="mb-3 titulo border-start px-5">PROJECT LIBRARY</h2>
                 </div>
                 <p class="mb-3 px-2 subtitulo text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                     Assumenda eligendi
@@ -159,7 +151,7 @@
 
             <div class="row">
                 <div class="col-md-6 mt-5 border-end">
-                    <h2 class="border-start px-2 titulo">Spain</h2>
+                    <h2 class="border-start px-5 titulo">SPAIN</h2>
                     <p class="mb-3 px-2 subtitulo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda
                         eligendi
                         quas excepturi consequuntur tenetur rerum incidunt velit, quisquam dolores inventore voluptatum
@@ -186,7 +178,7 @@
 
             <div class="row py-2">
                 <div class="col-md-6 mt-5 border-end">
-                    <h2 class="border-start px-2 titulo">New York</h2>
+                    <h2 class="border-start px-5 titulo">NEW YORK</h2>
                     <p class="mb-3 px-2 subtitulo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda
                         eligendi
                         quas excepturi consequuntur tenetur rerum incidunt velit, quisquam dolores inventore voluptatum
@@ -211,7 +203,7 @@
 
             <div class="row py-2">
                 <div class="col-md-6 mt-5 border-end">
-                    <h2 class="border-start px-2 titulo">Other locations</h2>
+                    <h2 class="border-start px-5 titulo">OTHER LOCATIONS</h2>
                     <p class="mb-3 px-2 subtitulo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda
                         eligendi
                         quas excepturi consequuntur tenetur rerum incidunt velit, quisquam dolores inventore voluptatum

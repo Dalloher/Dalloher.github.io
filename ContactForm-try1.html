@@ -21,51 +21,43 @@
 
 <body>
 
-    <!--Navbar para el header-->
-    <nav class="navbar navbar-expand-lg">
+     <!-- Navbar con dropdown que se abre al hacer hover -->
+    <nav class="navbar navbar-expand-lg custom-navbar">
         <div class="container-fluid">
-            <a href="./Home-Try1.html"><img src="./media/Captura de pantalla 2025-07-04 123653.png" alt="SF Logo"
-                    width="150" height="60" id="logoNav"></a>
+            <a href="./Home-Try1.html">
+                <img src="./media/Captura de pantalla 2025-07-04 123653.png" alt="SF Logo" width="150" height="60"
+                    id="logoNav">
+            </a>
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./Home-Try1.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="./Team-try1.html">Team</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="./PressSpace-try1-html">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="./Projects-try1.html">Projects</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
+                    <li class="nav-item"><a class="nav-link active" href="./Home-Try1.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="./Team-try1.html">Team</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="./PressSpace-try1.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="./Projects-try1.html">Projects</a></li>
+
+                    <!-- Dropdown con hover -->
+                    <li class="nav-item dropdown hover-dropdown">
+                        <a class="nav-link active dropdown-toggle" href="#" id="servicesDropdown" role="button">
                             Services
                         </a>
-                        <ul class="dropdown-menu">
+                        <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
                             <li><a class="dropdown-item" href="./Building-try1.html">Building</a></li>
                             <li><a class="dropdown-item" href="./Financial-try1.html">Financial</a></li>
-
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-
                             <li><a class="dropdown-item" href="./Invest-try1.html">Invest with us</a></li>
-
                         </ul>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="./ContactForm-try1.html">Contact us</a>
-                    </li>
 
+                    <li class="nav-item"><a class="nav-link active" href="./ContactForm-try1.html">Contact us</a></li>
                 </ul>
             </div>
         </div>
@@ -88,7 +80,7 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8">
-                    <h2 class="mb-4 text-center titulo">Contact Us</h2>
+                    <h2 class="mb-4 text-center titulo">CONTACT US</h2>
                     <p class="text-center subtitulo mb-5">Need something specific? Fill out the form below and our team
                         will be in touch shortly.</p>
 
