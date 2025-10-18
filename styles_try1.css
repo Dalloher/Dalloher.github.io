@@ -310,7 +310,7 @@ svg {
 @media (max-width: 992px) {
     .header {
         background-attachment: scroll !important;
-        background-position: center !important;
+        background-position: right !important;
         background-size: cover !important; /* o 'cover' si prefieres que rellene */
     }
 }
