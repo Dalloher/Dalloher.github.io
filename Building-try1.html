@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Building services - SteelForm SL</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap" rel="stylesheet">
+    <link href="./styles_try1.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+    <!--Importante diferenciar títulos y subtítulos-->
+
+    <!-- Navbar con dropdown que se abre al hacer hover -->
+    <nav class="navbar navbar-expand-lg custom-navbar">
+        <div class="container-fluid">
+            <a href="./Home-Try1.html">
+                <img src="./media/Captura de pantalla 2025-07-04 123653.png" alt="SF Logo" width="150" height="60"
+                    id="logoNav">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="./Home-Try1.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="./Team-try1.html">Team</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="./Projects-try1.html">Projects</a></li>
+
+                    <!-- Dropdown con hover -->
+                    <li class="nav-item dropdown hover-dropdown">
+                        <a class="nav-link active dropdown-toggle" href="#" id="servicesDropdown" role="button">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                            <li><a class="dropdown-item" href="./Building-try1.html">Building</a></li>
+                            <li><a class="dropdown-item" href="./Financial-try1.html">Financial</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link active" href="./ContactForm-try1.html">Contact us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--Imagen y texto header-->
+    <div class="container-fluid header overflow-hidden">
+        <div class="row">
+            <div class="col-7 animation1 text-center text-white">
+                <h3 class="titulo">Building</h3>
+                <h4>We build with intention—designing every detail to honor our craft and shape lasting value.</h4>
+                <h5>Need custom information? Leave your contact info, we'll write you as soon as possible!</h5>
+                <a href="mailto:contacto@tudominio.com?subject=Consulta%20desde%20la%20web&body=Hola,%20me%20gustaría%20saber%20más%20sobre..."
+                    class="btn btn-modern mt-5">Leave your info</a>
+            </div>
+        </div>
+    </div>
+
+    <!--Building our legacy-->
+    <section class="py-5">
+        <div class="container">
+            <div class="row  mt-5 mb-5">
+                <div class="col-md-6 px-5 border-start">
+                    <h2 class="mb-3 titulo">BUILDING OUR LEGACY</h2>
+                </div>
+                <div class="col-12">
+                    <p class="subtitulo">Our legacy is built from the ground up—where design, craftsmanship, and
+                        thoughtful decisions guide every structure we create.
+                        Each project becomes a reflection of who we are and the care we bring to the process.</p>
+                </div>
+                <div class="col-12">
+                    <p class="subtitulo">Building our legacy means designing with purpose, constructing with integrity,
+                        and shaping spaces that stand for something greater.
+                        From the first sketch to the final detail, we honor the values that define our way of working.
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="row mt-5 mb-5">
+                <div class="col-6">
+                    <img src="./media/lateral_liberty.jpeg" alt="" class="img-fluid">
+                </div>
+                <div class="col-6">
+                    <img src="./media/artistic_empirestate.jpeg" alt="" class="img-fluid">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 px-5 border-start">
+                    <h2 class="mb-3 titulo">KNOW-HOW, OUR WAY OF DOING THINGS</h2>
+                </div>
+            </div>
+            <div class="row mb-5">
+                <div class="col-md-6">
+                    <p class="subtitulo">Our know-how comes from years of refining our process—listening, designing,
+                        planning, and building with clarity and intention.
+                        Every project carries a story shaped by our team’s experience and the discipline behind each
+                        decision.
+                        This is our way of doing things: precise, thoughtful, and deeply committed to quality</p>
+                </div>
+                <div class="col-md-6">
+                    <p class="subtitulo">Behind every building lies a journey of research, design, and careful
+                        execution.
+                        We approach each step with respect for the craft and confidence in our expertise.
+                        Our know-how is not just a method—it is the foundation of every result we deliver.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Pride in every step and button for contact again-->
+    <section class="footerOne">
+        <div class="container">
+            <div class="row py-4">
+                <div class="col px-5 border-end text-md-end">
+                    <h2 class="mb-3 titulo">PRIDE IN EVERY STEP</h2>
+                </div>
+            </div>
+
+            <div class="row mt-2">
+                <div class="col-md-6">
+                    <p class="subtitulo">
+                        We take pride in every step because we believe that excellence is the result of constancy and
+                        discipline.
+                        From day one, we learned to work with dedication, and that same spirit has carried us forward
+                        into the New York market.
+                        Every detail reflects the values that shaped us and continue to guide our growth.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <p class="subtitulo">Our way of doing things comes from a deep respect for the process—designing
+                        with care, building with precision, and honoring each stage along the way.
+                        We are proud of this approach because it defines who we are and why we continue to grow.
+                        Doing things right has always been, and will always be, our path.</p>
+                </div>
+
+                <!-- Carrusel de proyectos destacados -->
+                <div class="col mt-3">
+                    <div id="highlightedProjects" class="carousel slide mb-5 mt-3" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <a href="./Project1.html">
+                                    <img src="./media/arco_empirestate.jpeg" class="d-block w-100 rounded"
+                                        alt="Project 1">
+                                </a>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="./Project2.html">
+                                    <img src="./media/artistic_empirestate.jpeg" class="d-block w-100 rounded"
+                                        alt="Project 2">
+                                </a>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="./Project3.html">
+                                    <img src="./media/lookout_far.jpeg" class="d-block w-100 rounded" alt="Project 3">
+                                </a>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#highlightedProjects"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#highlightedProjects"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-12 text-center">
+                    <a href="mailto:contacto@tudominio.com?subject=Consulta%20desde%20la%20web&body=Hola,%20me%20gustaría%20saber%20más%20sobre..."
+                        class="btn btn-modern">
+                        What can we build for you?
+                    </a>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footerOne">
+        <footer class="container px-5 pt-5">
+            <div class="row">
+
+                <!-- Columna 1: Logo + descripción -->
+                <div class="col-12 mb-4 border-bottom">
+                    <img src="./media/logo_SFgris.png" alt="Logo Steel Form" style="max-height: 80px;">
+                    <p class="mt-3">
+                        Steel Form SL | Specialized steel structures since 1990.
+                    </p>
+                </div>
+
+                <!-- Columna 2: Enlaces rápidos -->
+                <div class="col-12 mb-4">
+                    <h6 class="fw-bold">Enlaces</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light text-decoration-none">Sobre nosotros</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Servicios</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Proyectos</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <!-- Columna 4: Contacto -->
+                <div class="col-12 mb-4 border-top pt-4">
+                    <h6 class="fw-bold">Contacto</h6>
+                    <p><i class="bi bi-geo-alt-fill"></i> Carrer Ausiàs March, Nº30, 1A, 12540 Villarreal, Castellón</p>
+                    <p><i class="bi bi-telephone-fill"></i> +34 000 000 000</p>
+                    <p><i class="bi bi-envelope-fill"></i> info@steelform.com</p>
+
+                    <!-- Redes sociales -->
+                    <div class="mt-3">
+                        <a href="#" class="text-light me-3" aria-label="LinkedIn" target="_blank"
+                            rel="noopener noreferrer">
+                            <i class="bi bi-linkedin fs-4"></i>
+                        </a>
+                        <a href="https://instagram.com/steelform_ny/" class="text-light me-3" aria-label="Instagram"
+                            target="_blank" rel="noopener noreferrer">
+                            <i class="bi bi-instagram fs-4"></i>
+                        </a>
+                        <a href="https://facebook.com/@steelformnyc" class="text-light me-3" aria-label="Facebook"
+                            target="_blank" rel="noopener noreferrer">
+                            <i class="bi bi-facebook fs-4"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Derechos reservados -->
+            <div class="row border-top pt-1 pb-3">
+                <div class="col text-center">
+                    <small>© 2025 Steel Form SL. Todos los derechos reservados.</small>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+</body>
+
+</html>

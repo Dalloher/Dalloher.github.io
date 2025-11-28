@@ -1,0 +1,368 @@
+<!--JSON NEEDED PARA NO REPETIR EL CÓDIGO MIL VECES-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - SteelForm SL</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap" rel="stylesheet">
+    <link href="./styles_try1.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+
+    <!-- Navbar con dropdown que se abre al hacer hover -->
+    <nav class="navbar navbar-expand-lg custom-navbar">
+        <div class="container-fluid">
+            <a href="./Home-Try1.html">
+                <img src="./media/Captura de pantalla 2025-07-04 123653.png" alt="SF Logo" width="150" height="60"
+                    id="logoNav">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="./Home-Try1.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="./Team-try1.html">Team</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="./Projects-try1.html">Projects</a></li>
+
+                    <!-- Dropdown con hover -->
+                    <li class="nav-item dropdown hover-dropdown">
+                        <a class="nav-link active dropdown-toggle" href="#" id="servicesDropdown" role="button">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                            <li><a class="dropdown-item" href="./Building-try1.html">Building</a></li>
+                            <li><a class="dropdown-item" href="./Financial-try1.html">Financial</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link active" href="./ContactForm-try1.html">Contact us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--Imagen y texto header-->
+    <div class="container-fluid header overflow-hidden">
+        <div class="row">
+            <div class="col-7 animation1 text-center text-white">
+                <h3 class="titulo">Projects</h3>
+                <h4>Building meaningful projects through knowledge, discipline, and the unwavering commitment to do
+                    things the right way.</h4>
+                <h5>Need custom information? Leave us an email, we'll write you as soon as possible!</h5>
+                <a href="mailto:contacto@tudominio.com?subject=Consulta%20desde%20la%20web&body=Hola,%20me%20gustaría%20saber%20más%20sobre..."
+                    class="btn btn-modern mt-5">Leave your info</a>
+            </div>
+        </div>
+    </div>
+
+    <!--Timeline-->
+    <section>
+        <div class="container ocultar">
+            <div class="row mt-5 px-5">
+                <div class="col-md-6 ">
+                    <h2 class="mb-3 titulo border-start px-5">TIMELINE OF DEVELOPMENT</h2>
+                </div>
+            </div>
+            <div class="row mt-5 px-5">
+                <div class="col-12">
+                    <p class="subtitulo text-center">
+                        Hard work always finds its reward, even through demanding times and changing landscapes.
+                    </p>
+                </div>
+            </div>
+            <div class="timeline-wrapper">
+                <svg id="timeline-svg" width="100%" height="500"></svg>
+                <div id="tooltip" class="tooltip"></div>
+            </div>
+        </div>
+    </section>
+
+    <!--Highlighted projects-->
+    <div class="container py-5">
+        <div class="row px-5">
+            <div class="col-md-6 ">
+
+                <h2 class="mb-3 titulo border-start px-5">HIGHLIGHTED PROJECTS</h2>
+
+            </div>
+        </div>
+        <div class="row mt-5 px-5">
+            <div class="col-12">
+                <p class="subtitulo">A selection of projects shaped by expertise, intention, and a deep respect for our
+                    craft.</p>
+            </div>
+        </div>
+
+        <!-- Carrusel de proyectos destacados -->
+        <div id="highlightedProjects" class="carousel slide mb-5 mt-3" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <a href="./Project1.html">
+                        <img src="./media/arco_empirestate.jpeg" class="d-block w-100 rounded" alt="Project 1">
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="./Project2.html">
+                        <img src="./media/artistic_empirestate.jpeg" class="d-block w-100 rounded" alt="Project 2">
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="./Project3.html">
+                        <img src="./media/lookout_far.jpeg" class="d-block w-100 rounded" alt="Project 3">
+                    </a>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#highlightedProjects"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#highlightedProjects"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+        </div>
+    </div>
+
+    <!--Todos los proyectos-->
+    <section class="footerOne">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-6 mt-5">
+                    <h2 class="mb-3 titulo border-start px-5">PROJECT LIBRARY</h2>
+                </div>
+                <p class="mb-3 px-2 subtitulo text-center">Each project reflects a journey built step by step, guided by
+                    experience, precision, and the pursuit of lasting value.
+                    This library brings together the work that defines who we are and how we build.</p>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 mt-5 border-end">
+                    <h2 class="border-start px-5 titulo">SPAIN</h2>
+                    <p class="mb-3 px-2 subtitulo">Our work in Spain is rooted in the values that shaped
+                        us—craftsmanship, proximity, and a deep respect for every detail.</p>
+                    <img src="./media/esp.webp" alt="Figurina de España" class="img-fluid">
+                </div>
+                <div class="col-md-6 mt-5 py-5 text-center">
+                    <ul class="list-unstyled">
+                        <li class="mb-3">Proyecto y construcción nave industrial Clariana, Castellón</li>
+                        <li class="mb-3">Diseño, proyecto y construcción nave industrial y oficinas Molde Azul, Onda,
+                            Castellón</li>
+                        <li class="mb-3">Estación de Servicio Cepsa Fravilcas, Castellón</li>
+                        <li class="mb-3">Estación de Servicio Cepsa Fravilcas, Castellón</li>
+                        <li class="mb-3">Edificio de Oficinas BP Oil, Castellón</li>
+                        <li class="mb-3">Edificio de 12 Viviendas + 2 locales comerciales Edificio Octubre, Villarreal,
+                            Castellón</li>
+                        <li class="mb-3">Accesibilidad Ayuntamiento de Atzeneta, Castellón</li>
+                        <li class="mb-3">Ampliación Auditorio Municipal Alfarb, Valencia</li>
+                        <li class="mb-3">Rehabilitación Colegio El Palmar, Valencia</li>
+                        <li class="mb-3">Mejora Consultorio Médico, Vistabella, Castellón</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row py-2">
+                <div class="col-md-6 mt-5 border-end">
+                    <h2 class="border-start px-5 titulo">NEW YORK</h2>
+                    <p class="mb-3 px-2 subtitulo">In New York, we bring our knowledge, discipline, and European
+                        heritage to one of the world’s most demanding environments.</p>
+                    <img src="./media/USA_New_York_location_map.svg" alt="Figurina de Nueva York" class="img-fluid"
+                        width="52%">
+                </div>
+                <div class="col-md-6 mt-5 py-5 text-center">
+                    <ul class="list-unstyled">
+                        <li class="mb-3">Diseño, proyecto y construcción Single-Family Home, Freeport, NY</li>
+                        <li class="mb-3">Adecuación Hoteles, NYC, NY</li>
+                        <li class="mb-3">Adecuación Restaurantes, NYC, NY</li>
+                        <li class="mb-3">Diseño, proyecto y construcción single-family, NYC, NY</li>
+                        <li class="mb-3">Proyecto y construcción The Latina, New York</li>
+                        <li class="mb-3">Proyecto y construcción Chelsea, New York</li>
+                        <li class="mb-3">Proyecto y construcción Tudor, New York</li>
+                        <li class="mb-3">Proyecto y construcción Bridge M., New York</li>
+                        <li class="mb-3">Proyecto y construcción Hotel 29, New York</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row py-2">
+                <div class="col-md-6 mt-5 border-end">
+                    <h2 class="border-start px-5 titulo">OTHER LOCATIONS</h2>
+                    <p class="mb-3 px-2 subtitulo">Across the world, our projects carry the same commitment: build with
+                        purpose, honor the process, and deliver enduring quality.</p>
+                    <img src="./media/global.jpg" alt="Figurina de Nueva York" class="img-fluid" width="52%">
+                </div>
+                <div class="col-md-6 mt-5 py-5 text-center">
+                    <ul class="list-unstyled">
+                        <li class="mb-3">Viviendas Unifamiliares Caldas Nova y Goian, Brasil</li>
+                        <li class="mb-3">Viviendas Unifamiliares Haiti</li>
+                        <li class="mb-3">Diseño, proyecto y construcción hotel, Jamaica</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footerOne">
+        <footer class="container px-5 pt-5">
+            <div class="row">
+
+                <!-- Columna 1: Logo + descripción -->
+                <div class="col-12 mb-4 border-bottom">
+                    <img src="./media/logo_SFgris.png" alt="Logo Steel Form" style="max-height: 80px;">
+                    <p class="mt-3">
+                        Steel Form SL | Specialized steel structures since 1990.
+                    </p>
+                </div>
+
+                <!-- Columna 2: Enlaces rápidos -->
+                <div class="col-12 mb-4">
+                    <h6 class="fw-bold">Enlaces</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light text-decoration-none">Sobre nosotros</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Servicios</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Proyectos</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <!-- Columna 4: Contacto -->
+                <div class="col-12 mb-4 border-top pt-4">
+                    <h6 class="fw-bold">Contacto</h6>
+                    <p><i class="bi bi-geo-alt-fill"></i> Carrer Ausiàs March, Nº30, 1A, 12540 Villarreal, Castellón</p>
+                    <p><i class="bi bi-telephone-fill"></i> +34 000 000 000</p>
+                    <p><i class="bi bi-envelope-fill"></i> info@steelform.com</p>
+
+                    <!-- Redes sociales -->
+                    <div class="mt-3">
+                        <a href="#" class="text-light me-3" aria-label="LinkedIn" target="_blank"
+                            rel="noopener noreferrer">
+                            <i class="bi bi-linkedin fs-4"></i>
+                        </a>
+                        <a href="https://instagram.com/steelform_ny/" class="text-light me-3" aria-label="Instagram"
+                            target="_blank" rel="noopener noreferrer">
+                            <i class="bi bi-instagram fs-4"></i>
+                        </a>
+                        <a href="https://facebook.com/@steelformnyc" class="text-light me-3" aria-label="Facebook"
+                            target="_blank" rel="noopener noreferrer">
+                            <i class="bi bi-facebook fs-4"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Derechos reservados -->
+            <div class="row border-top pt-1 pb-3">
+                <div class="col text-center">
+                    <small>© 2025 Steel Form SL. Todos los derechos reservados.</small>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+    <script>
+        const projects = [
+            { "name": "Nave industrial Clariana", "location": "Castellón de la Plana", "completed": true, "period": "1996-2010" },
+            { "name": "Hotel: diseño y construcción", "location": "Jamaica", "completed": true, "period": "2011-2015" },
+            { "name": "Adecuación hoteles", "location": "New York, NYC", "completed": true, "period": "2016-2019" },
+            { "name": "Recesión", "location": "Global", "completed": false, "period": "2020", "offset": 40 },
+            { "name": "Rehabilitación Colegio El Palmar", "location": "Valencia", "completed": true, "period": "2020-2025" },
+            { "name": "Proyecto y construcción The Latina", "location": "New York", "completed": false, "period": "2026-2031" },
+            { "name": "Recesión", "location": "Global", "completed": false, "period": "2028", "offset": 50 }
+        ];
+
+        const svg = document.getElementById("timeline-svg");
+        const tooltip = document.getElementById("tooltip");
+
+        const width = svg.clientWidth;
+        const height = Math.min(svg.clientHeight, 400); // limitar altura máxima
+        svg.setAttribute("height", height);
+
+        const marginX = 80;
+        const marginY = 60; // espacio superior e inferior
+
+        const availableHeight = height - 2 * marginY;
+        const stepY = availableHeight / (projects.length - 1);
+
+        const points = projects.map((proj, i) => {
+            let y = height - marginY - i * stepY;
+            if (proj.offset) y -= (proj.offset * availableHeight / 500); // escala offsets para que quepan
+            const x = marginX + i * ((width - 2 * marginX) / (projects.length - 1));
+            return { ...proj, x, y };
+        });
+
+        // Crear polyline
+        const polyline = document.createElementNS("http://www.w3.org/2000/svg", "polyline");
+        polyline.setAttribute("fill", "none");
+        polyline.setAttribute("stroke", "#333");
+        polyline.setAttribute("stroke-width", "2");
+        polyline.setAttribute("points", points.map(p => `${p.x},${p.y}`).join(" "));
+        svg.appendChild(polyline);
+
+        // Animación adaptada al largo real
+        const totalLength = polyline.getTotalLength();
+        polyline.style.strokeDasharray = totalLength;
+        polyline.style.strokeDashoffset = totalLength;
+
+        const animatePolyline = () => {
+            const svgTop = svg.getBoundingClientRect().top;
+            if (svgTop < window.innerHeight) {
+                polyline.style.transition = "stroke-dashoffset 2s ease-out";
+                polyline.style.strokeDashoffset = 0;
+                window.removeEventListener("scroll", animatePolyline);
+            }
+        };
+        window.addEventListener("scroll", animatePolyline);
+
+        // Dibujar puntos y tooltips
+        points.forEach(p => {
+            const circle = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+            circle.setAttribute("cx", p.x);
+            circle.setAttribute("cy", p.y);
+            circle.setAttribute("r", 7); // radio reducido
+            circle.setAttribute("class", "point");
+            circle.setAttribute("fill", p.completed ? "#4CAF50" : "#FFA500");
+            circle.style.cursor = "pointer";
+
+            circle.addEventListener("mouseenter", () => {
+                tooltip.style.display = "block";
+                const rect = svg.getBoundingClientRect();
+                tooltip.style.left = `${rect.left + p.x}px`;
+                tooltip.style.top = `${rect.top + p.y - 50 + window.scrollY}px`;
+                tooltip.innerHTML = `
+            <strong>${p.name}</strong><br>
+            ${p.location}<br>
+            ${p.period}<br>
+            ${p.completed ? "✅ Completado" : "⏳ En progreso"}
+        `;
+            });
+
+            circle.addEventListener("mouseleave", () => {
+                tooltip.style.display = "none";
+            });
+
+            svg.appendChild(circle);
+        });
+    </script>
+
+</body>
+
+</html>

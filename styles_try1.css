@@ -1,0 +1,450 @@
+body {
+    font-family: 'EB Garamond', serif;
+}
+
+.mercado {
+    max-height: 20px;
+    min-height: 20px;
+    background-color: rgba(128, 128, 128, 0.666);
+}
+
+.header {
+    min-height: 95vh;
+    background-image: url('./media/lateral_liberty.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.animation1 {
+    animation: fadeIn 1.5s ease-in-out forwards;
+
+    position: absolute;
+    bottom: 100px;
+    left: 60px;
+}
+
+@keyframes fadeIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.bi {
+    color: black;
+}
+
+.bi:hover {
+    transform: scale(5);
+    /* escala uniforme (x e y) */
+    transition: transform 0.2s ease;
+    /* animación suave */
+}
+
+.titulo {
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.subtitulo {
+    font-size: 20px;
+}
+
+.card-custom-bg {
+    background-color: rgb(255, 255, 255);
+}
+
+.navbar-nav {
+    font-size: 1.2rem;
+    padding: 1.5vh;
+}
+
+#navbarSupportedContent {
+    margin-right: 8vh;
+}
+
+#logoNav {
+    margin-left: 8vh;
+}
+
+
+.dropdown-item:hover {
+    color: #0056b3;
+    transition: color 0.3s ease;
+}
+
+.footerOne {
+    background-color: rgba(129, 128, 128, 0.563);
+}
+
+.footerTwo {
+    background-color: rgba(129, 128, 128, 0.143);
+}
+
+.social:hover {
+    cursor: pointer;
+}
+
+#carousel-wrapper {
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 100%;
+    scroll-behavior: auto;
+    /* No animación nativa */
+}
+
+#carousel-track {
+    display: flex;
+    animation: scroll-carousel 20s linear infinite;
+}
+
+@keyframes scroll-carousel {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* Ocultar scrollbar en todos los navegadores */
+#carousel-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+#carousel-wrapper {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.patrocinadores {
+    min-height: 40vh;
+}
+
+.prensa {
+    min-height: 45vh;
+    background-image: url('./media/press.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    z-index: 0;
+}
+
+.prensa::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.455);
+    /* Adjust the alpha for desired opacity */
+    z-index: -1;
+    /* behind the content */
+}
+
+.btn-modern {
+    font-family: 'EB Garamond', serif;
+    background-color: none;
+    /* Matches Bootstrap's 'secondary' */
+    color: white;
+    border: solid 1px white;
+    padding: 0.75rem 1.75rem;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.btn-modern-overWhite {
+    font-family: 'EB Garamond', serif;
+    background-color: none;
+    /* Matches Bootstrap's 'secondary' */
+    color: black;
+    border: solid 1px black;
+    padding: 0.75rem 1.75rem;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.btn-modern:hover {
+    border: solid 1px black;
+    color: black;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.btn-modern-overWhite:hover {
+    border: solid 1px rgba(108, 117, 125, 1);
+    color: rgba(108, 117, 125, 1);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.btn-modern:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);
+}
+
+.hoverAnim:hover {
+    cursor: pointer;
+    transform: translateY(-12px);
+    transition-duration: .3s;
+    box-shadow: 0 6px 16px rgb(0, 0, 0);
+}
+
+.hoverAnim:focus {
+    box-shadow: 0 6px 16px rgb(0, 0, 0);
+}
+
+.modal-body::-webkit-scrollbar {
+    display: none;
+}
+
+#highlightedProjects .carousel-item img {
+    max-height: 400px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.gris {
+    background-color: #6c757d;
+}
+
+.timeline-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding-bottom: 60px;
+    /* espacio para los puntos y tooltip */
+}
+
+svg {
+    width: 100%;
+    height: 500px;
+    /* altura suficiente para todos los puntos */
+    display: block;
+}
+
+.point {
+    fill: red;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.point:hover {
+    fill: darkred;
+}
+
+.tooltip {
+    position: absolute;
+    background: white;
+    padding: 0.5rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    display: none;
+    pointer-events: none;
+}
+
+/* ===== Dropdown Hover Behavior ===== */
+.hover-dropdown .dropdown-menu {
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(15px);
+    transition: all 0.3s ease;
+    margin-top: 0;
+    border: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+.hover-dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* ===== Dropdown Items ===== */
+.dropdown-menu .dropdown-item {
+    color: #333333;
+    padding: 0.7rem 1.2rem;
+    font-weight: 400;
+    transition: all 0.3s ease;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: #f0f6ff;
+    color: rgba(129, 128, 128, 0.563);
+}
+
+/* ===== Active Link Highlight ===== */
+.navbar-nav .nav-link.active {
+    position: relative;
+}
+
+.navbar-nav .nav-link.active::after {
+    content: "";
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: rgba(129, 128, 128, 0.563);
+    transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link.active:hover::after {
+    width: 100%;
+}
+
+/* ===== Responsive Adjustments ===== */
+@media (max-width: 992px) {
+    .hover-dropdown .dropdown-menu {
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        position: static;
+        box-shadow: none;
+    }
+}
+
+.navbar .dropdown-toggle::after {
+    display: none !important;
+}
+
+/* ===== Corrección imagen header para móviles ===== */
+@media (max-width: 992px) {
+    .header {
+        background-attachment: scroll !important;
+        background-position: right !important;
+        background-size: cover !important;
+        /* o 'cover' si prefieres que rellene */
+    }
+}
+
+/* ======== CARRUSEL SEPARADO ======== */
+.carouselSeparado {
+    position: relative;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.carousel-innerSeparado {
+    display: flex;
+    transition: transform 0.6s ease;
+}
+
+.carousel-itemSeparado {
+    flex: 0 0 25%;
+    /* 4 visibles */
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.carousel-itemSeparado img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.carousel-itemSeparado img:hover {
+    transform: scale(1.05);
+}
+
+.carousel-textoSeparado {
+    text-align: center;
+    font-size: 0.95rem;
+    color: #333;
+    margin-top: 8px;
+    line-height: 1.3;
+}
+
+/* Controles */
+.carousel-control-prevSeparado,
+.carousel-control-nextSeparado {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.7);
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+    transition: background 0.3s ease;
+}
+
+.carousel-control-prevSeparado:hover,
+.carousel-control-nextSeparado:hover {
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.carousel-control-prevSeparado {
+    left: 10px;
+}
+
+.carousel-control-nextSeparado {
+    right: 10px;
+}
+
+.carousel-control-prevSeparado span,
+.carousel-control-nextSeparado span {
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+/* Responsividad */
+@media (max-width: 992px) {
+    .carousel-itemSeparado {
+        flex: 0 0 33.333%;
+        /* 3 visibles */
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-itemSeparado {
+        flex: 0 0 50%;
+        /* 2 visibles */
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel-itemSeparado {
+        flex: 0 0 100%;
+        /* 1 visible */
+    }
+}
+
+/* Timeline se oculta en tablet y móvil */
+@media (max-width: 992px) {
+    .ocultar {
+        display: none;
+    }
+}
