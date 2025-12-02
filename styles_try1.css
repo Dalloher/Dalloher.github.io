@@ -75,6 +75,10 @@ body {
     padding: 1.5vh;
 }
 
+.custom-navbar {
+    background-color: #e7e1dc   ;
+}
+
 #navbarSupportedContent {
     margin-right: 8vh;
 }
@@ -457,27 +461,9 @@ svg {
     }
 }
 
-.card-custom-bg {
-    background-color: rgba(255, 255, 255, 0.95);
-    border-radius: 15px;
-    padding: 1.5rem;
-}
-
-.apartment-item {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 0.5rem 0;
-}
-
-.apartment-item:last-child {
-    border-bottom: none;
-}
-
-.apartment-item span {
-    font-weight: 500;
-    font-size: 1rem;
-}
-
-.apartment-item a {
-    font-size: 0.9rem;
-    padding: 0.3rem 1rem;
+.apartment-list li {
+    background: rgba(255, 255, 255, 0.15); /* ligero fondo semi-transparente */
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background 0.3s;
 }
