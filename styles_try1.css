@@ -18,6 +18,14 @@ body {
     position: relative;
 }
 
+.headerCervantes {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./mediaC/3.Foto Fondo 1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    position: relative;
+}
+
 .animation1 {
     animation: fadeIn 1.5s ease-in-out forwards;
 
@@ -447,4 +455,29 @@ svg {
     .ocultar {
         display: none;
     }
+}
+
+.card-custom-bg {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    padding: 1.5rem;
+}
+
+.apartment-item {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0.5rem 0;
+}
+
+.apartment-item:last-child {
+    border-bottom: none;
+}
+
+.apartment-item span {
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.apartment-item a {
+    font-size: 0.9rem;
+    padding: 0.3rem 1rem;
 }
