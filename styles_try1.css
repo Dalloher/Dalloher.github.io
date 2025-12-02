@@ -90,6 +90,12 @@ body {
     height: 12vh;
 }
 
+@media (max-width: 992px) {
+    .custom-navbar {
+        height: 15vh;
+    }
+}
+
 #navbarSupportedContent {
     margin-right: 8vh;
 }
@@ -478,4 +484,27 @@ svg {
     padding: 0.5rem 1rem;
     border-radius: 5px;
     transition: background 0.3s;
+}
+
+/* Botón flotante centrado */
+#btnTop {
+    position: fixed;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #e7e1dc;
+    color: #333;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+    display: none; /* Oculto inicialmente */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 9999;
+}
+
+#btnTop:hover {
+    transform: translateX(-50%) scale(1.06);
 }
