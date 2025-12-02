@@ -76,7 +76,8 @@ body {
 }
 
 .custom-navbar {
-    background-color: #e7e1dc   ;
+    background-color: #e7e1dc;
+    height: 12vh;
 }
 
 #navbarSupportedContent {
