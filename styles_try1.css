@@ -562,8 +562,7 @@ svg {
 
     /* Hacer más pequeño el icono hamburguesa */
     #hamburguesa {
-        transform: scale(0.75);
-        padding: 2px 4px !important;
+        display:none;
     }
 
     /* Asegurar que el nav no se rompa */
