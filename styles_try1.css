@@ -22,7 +22,7 @@ body {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./mediaC/better_res.png');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: left;
+    background-position: center;
     position: relative;
 
 }
@@ -543,4 +543,32 @@ svg {
 
 .navbar-center h1 {
     white-space: nowrap;
+}
+
+/* FIX especial para iPhone SE y móviles muy pequeños */
+@media (max-width: 700px) {
+
+    /* Reducimos el tamaño del título del navbar */
+    .navbar-center h1 {
+        font-size: 1.4rem !important;
+    }
+
+    /* Evita que el título empuje al icono hacia abajo */
+    .navbar-center {
+        flex: 1;
+        text-align: center;
+        margin-right: 20px; /* espacio para que el icono no choque */
+    }
+
+    /* Hacer más pequeño el icono hamburguesa */
+    #hamburguesa {
+        transform: scale(0.75);
+        padding: 2px 4px !important;
+    }
+
+    /* Asegurar que el nav no se rompa */
+    .navbar {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
 }
