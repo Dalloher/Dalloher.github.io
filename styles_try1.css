@@ -87,12 +87,16 @@ body {
 
 .custom-navbar {
     background-color: #e7e1dc;
-    height: 12vh;
+    height: 10vh;
 }
 
 @media (max-width: 992px) {
     .custom-navbar {
-        height: 15vh;
+        height: 7vh;
+    }
+
+    #titleNot {
+        display: none;
     }
 }
 
@@ -499,12 +503,44 @@ svg {
     border-radius: 25px;
     font-size: 16px;
     cursor: pointer;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.25);
-    display: none; /* Oculto inicialmente */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    display: none;
+    /* Oculto inicialmente */
     transition: opacity 0.3s ease, transform 0.3s ease;
     z-index: 9999;
 }
 
 #btnTop:hover {
     transform: translateX(-50%) scale(1.06);
+}
+
+/* Fondo del menú colapsado en móviles */
+.navbar .navbar-collapse.show {
+    background-color: #e7e1dc !important;
+    padding: 1rem;
+}
+
+/* Hacer que el menú móvil use el ancho completo del navbar */
+.navbar .navbar-collapse {
+    width: 100% !important;
+}
+
+/* Y cuando esté desplegado (show), también */
+.navbar .navbar-collapse.show {
+    width: 100% !important;
+}
+
+@media (max-width: 992px) {
+    .navbar .navbar-collapse {
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #e7e1dc;
+        z-index: 999;
+    }
+}
+
+.navbar-center h1 {
+    white-space: nowrap;
 }
