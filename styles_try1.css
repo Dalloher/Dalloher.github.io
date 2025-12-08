@@ -39,7 +39,8 @@ body {
     }
 
     #logoTranspa {
-        max-height: 10vh;
+        max-height: 17vh;
+        margin-left: 15%;
     }
 }
 
@@ -695,4 +696,26 @@ svg {
     margin-bottom: 0.4rem;
     opacity: 0.9;
     line-height: 1.45;
+}
+
+.footerCerv {
+    background-color: #e7e1dc;
+}
+
+.footer-marengo-info h5 {
+    font-family: 'EB Garamond', serif;
+    font-size: 1.3rem;
+}
+
+.footer-marengo-info p {
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+.footerCerv i {
+    font-size: 1.2rem;
+}
+
+#ediFooter {
+    border-bottom: 1px solid black;
 }
