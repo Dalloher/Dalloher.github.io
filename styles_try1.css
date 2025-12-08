@@ -725,3 +725,18 @@ svg {
 #ediFooter {
     border-bottom: 1px solid black;
 }
+
+/* Estado normal del botón */
+.btn-top {
+    transition: opacity 0.4s ease;
+}
+
+/* Cuando está sobre el footer (estado atenuado) */
+.btn-top.fade-out {
+    opacity: 0.25 !important;   /* casi transparente */
+}
+
+/* Cuando pasas el ratón encima vuelve a beige */
+.btn-top.fade-out:hover {
+    opacity: 1 !important;
+}

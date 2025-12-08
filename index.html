@@ -299,34 +299,35 @@
         <footer class="container pt-5">
 
             <!-- Título + Logo -->
-            <div class="row pb-3 mb-3 text-center" id="ediFooter">
-                <div class="col-md-6 col-12 mb-4 d-flex align-items-center text-center">
+            <div class="row pb-3 mb-3 text-center d-flex align-items-center" id="ediFooter">
+                <div class="col-md-6 col-12 mb-4 text-center">
                     <h3>EDIFICIO CERVANTES</h3>
                 </div>
                 <div class="col-md-6 col-12 mb-4 text-center">
                     <img src="./mediaC/1. Logo de Edif Cervantes.PNG" alt="Logo Steel Form" style="max-height: 80px;">
-                    <img src="./mediaC/2.Pie pagina_ Marengo Inmob.jpg" alt="Logo Marengo" style="max-height: 80px;">
                 </div>
             </div>
 
             <!-- NUEVA FILA: Información Marengo + Imagen -->
-            <div class="row align-items-center">
+            <div class="row">
 
                 <!-- Columna izquierda: texto -->
                 <div class="col mb-4 mb-md-0">
 
                     <div class="text-center text-md-start footer-marengo-info">
 
-                        <h5 class="fw-bold mb-3">Grupo Marengo | Asesores personales inmobiliarios</h5>
+                        <h3 class="fw-bold">Información y venta: </h3>
+                        <h5 class="mb-3">Grupo Marengo</h5>
 
                         <p class="mb-2">
                             <i class="bi bi-telephone-fill me-2"></i>
-                            964 106 497
+                            964 106 497 |
+                            <i class="bi bi-geo-alt-fill me-2"></i>
+                            Avenida la Murà 4, Vila-real
                         </p>
 
                         <p class="mb-0">
-                            <i class="bi bi-geo-alt-fill me-2"></i>
-                            Avenida la Murà 4, Vila-real
+
                         </p>
 
                     </div>
@@ -358,6 +359,30 @@
 
         btnTop.addEventListener("click", () => {
             document.getElementById("home").scrollIntoView({ behavior: "smooth" });
+        });
+
+        const footer = document.querySelector(".footerCerv");
+
+        window.addEventListener("scroll", () => {
+
+            const homeBottom = homeSection.offsetHeight - 100;
+
+            // Mostrar / ocultar botón según se baja del home
+            if (window.scrollY > homeBottom) {
+                btnTop.style.display = "block";
+            } else {
+                btnTop.style.display = "none";
+            }
+
+            // Detectar si el footer está en pantalla
+            const footerTop = footer.getBoundingClientRect().top;
+            const windowHeight = window.innerHeight;
+
+            if (footerTop < windowHeight) {
+                btnTop.classList.add("fade-out");   // activar transparencia
+            } else {
+                btnTop.classList.remove("fade-out"); // volver a normal
+            }
         });
     </script>
 </body>
