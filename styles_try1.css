@@ -19,12 +19,15 @@ body {
 }
 
 .headerCervantes {
+    min-height: 100vh;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./mediaC/better_res.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    position: relative;
-
+    margin-top: -17vh;
+    /* la misma altura del navbar */
+    padding-top: 15vh;
+    /* compensamos para que no se solapen los textos */
 }
 
 @media (max-width: 992px) {
@@ -33,6 +36,10 @@ body {
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
+    }
+
+    #logoTranspa {
+        max-height: 7vh;
     }
 }
 
@@ -86,17 +93,20 @@ body {
 }
 
 .custom-navbar {
-    background-color: #e7e1dc;
-    height: 10vh;
+    background-color: rgba(255, 255, 255, 0.0) !important;
+    backdrop-filter: blur(3px);
+    color: white;
+    padding: 0.5rem 0;
+    /* tamaño correcto adaptable */
+}
+
+.custom-navbar .nav-link {
+    color: white !important;
 }
 
 @media (max-width: 992px) {
     .custom-navbar {
         height: 7vh;
-    }
-
-    #titleNot {
-        display: none;
     }
 }
 
@@ -516,8 +526,12 @@ svg {
 
 /* Fondo del menú colapsado en móviles */
 .navbar .navbar-collapse.show {
-    background-color: #e7e1dc !important;
-    padding: 1rem;
+    background: rgb(120, 116, 116) !important;
+    backdrop-filter: blur(12px);
+    border-radius: 12px;
+    padding: 0.7rem;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    color: #fff !important;
 }
 
 /* Hacer que el menú móvil use el ancho completo del navbar */
@@ -536,7 +550,7 @@ svg {
         position: absolute;
         top: 100%;
         left: 0;
-        background-color: #e7e1dc;
+        background-color: rgb(120, 116, 116) !important;
         z-index: 999;
     }
 }
@@ -557,12 +571,8 @@ svg {
     .navbar-center {
         flex: 1;
         text-align: center;
-        margin-right: 20px; /* espacio para que el icono no choque */
-    }
-
-    /* Hacer más pequeño el icono hamburguesa */
-    #hamburguesa {
-        display:none;
+        margin-right: 20px;
+        /* espacio para que el icono no choque */
     }
 
     /* Asegurar que el nav no se rompa */
@@ -570,4 +580,119 @@ svg {
         padding-left: 0.5rem;
         padding-right: 0.5rem;
     }
+}
+
+/* ===== Dropdown transparente estilo glass unificado ===== */
+.glass-dropdown {
+    background: rgb(120, 116, 116) !important;
+    backdrop-filter: blur(12px);
+    border-radius: 12px;
+    padding: 0.7rem;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    color: #fff !important;
+}
+
+/* Items dentro del dropdown */
+.glass-dropdown .dropdown-item,
+.glass-dropdown .dropdown-header {
+    color: #fff !important;
+}
+
+.glass-dropdown .dropdown-item:hover {
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 8px;
+}
+
+/* ===== Hover para escritorio ===== */
+@media (min-width: 992px) {
+    .custom-dropdown:hover>.dropdown-menu {
+        display: block;
+        margin-top: 0;
+    }
+}
+
+/* ===== Dropdown en móvil mantiene efecto glass ===== */
+@media (max-width: 991px) {
+    .dropdown-menu.show {
+        background: rgb(120, 116, 116) !important;
+        backdrop-filter: blur(12px);
+        border-radius: 12px;
+        padding: 0.7rem;
+        border: 1px solid rgba(255, 255, 255, 0.25);
+    }
+
+    .dropdown-menu.show .dropdown-item,
+    .dropdown-menu.show .dropdown-header {
+        color: #fff !important;
+    }
+
+    .dropdown-menu.show .dropdown-item:hover {
+        background: rgba(255, 255, 255, 0.25);
+        border-radius: 8px;
+    }
+}
+
+/* Quitar flecha predeterminada del dropdown */
+.navbar .dropdown-toggle::after {
+    display: none !important;
+}
+
+.info-box {
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 12px;
+    padding: 1rem 1.5rem;
+    backdrop-filter: blur(4px);
+    max-width: 320px;
+    margin-bottom: 1.5rem;
+}
+
+.info-box ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.info-box li {
+    color: white;
+    opacity: 0.9;
+    padding: 0.45rem 0;
+    font-size: 1.22rem;   /* tamaño ligeramente mayor */
+    line-height: 1.45;    /* mejora la lectura */
+}
+
+.info-box li strong {
+    font-size: 1.26rem;   /* un pelín más para resaltar etiquetas */
+}
+
+.plano-info-box {
+    background: rgba(255, 255, 255, 0.10);
+    border-left: 3px solid rgba(255, 255, 255, 0.25);
+    padding: 1rem 1.3rem;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    color: white;
+    font-family: 'EB Garamond', serif;
+}
+
+.plano-info-box h4 {
+    font-size: 1.4rem;
+    margin-bottom: 0.6rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    padding-bottom: 0.3rem;
+    font-weight: 700;
+}
+
+.plano-info-box h5 {
+    font-size: 1.2rem;
+    margin-top: 0.8rem;
+    margin-bottom: 0.2rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.95);
+}
+
+.plano-info-box p {
+    font-size: 1.15rem;
+    margin-bottom: 0.4rem;
+    opacity: 0.9;
+    line-height: 1.45;
 }

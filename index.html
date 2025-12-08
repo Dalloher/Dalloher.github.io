@@ -24,7 +24,8 @@
 
             <!-- Texto central -->
             <div class="navbar-center mx-3">
-                <h1 class="fw-bold">EDIFICIO CERVANTES</h1>
+                <img src="./media/logotranspa.png" alt="Logo Steel From" id="logoTranspa"
+                    style="height: 15vh; margin-left:10vh;">
             </div>
 
             <!-- Toggler para móvil -->
@@ -34,11 +35,50 @@
             </button>
 
             <!-- Opciones del nav -->
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse text-center px-5" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="#apartamentos">Apartamentos</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="#planos">Planos</a></li>
+                    <li class="nav-item dropdown custom-dropdown">
+                        <a class="nav-link dropdown-toggle" id="apartDropdown" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Apartamentos
+                        </a>
+
+                        <ul class="dropdown-menu glass-dropdown" aria-labelledby="apartDropdown">
+
+                            <li>
+                                <h6 class="dropdown-header">Escalera 1</h6>
+                            </li>
+                            <li><a class="dropdown-item"
+                                    href="https://drive.google.com/file/d/1bkp6oBJhOqmCA4AtCr04Wj15x-k-sere/view">Apartamento
+                                    tipo A</a></li>
+                            <li><a class="dropdown-item"
+                                    href="https://drive.google.com/file/d/1FefytgdZUiMU12HxpCNPUR9ML20ms8Ud/view">Apartamento
+                                    tipo B</a></li>
+                            <li><a class="dropdown-item"
+                                    href="https://drive.google.com/file/d/1Fdmgvpb1YHpTNqAlnY_rHBIQGVeXXLix/view">Apartamento
+                                    tipo C</a></li>
+                            <li><a class="dropdown-item"
+                                    href="https://drive.google.com/file/d/1Gghe3WvwHAoh5RFE3sxEZoKwEdR3ttQ3/view">Apartamento
+                                    tipo D</a></li>
+
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+
+                            <li>
+                                <h6 class="dropdown-header">Escalera 2</h6>
+                            </li>
+                            <li><a class="dropdown-item"
+                                    href="https://drive.google.com/file/d/1KYlIWjOA4M37zGDmf8dQKXFpkcsDGPH4/view">Apartamento
+                                    tipo A</a></li>
+                            <li><a class="dropdown-item"
+                                    href="https://drive.google.com/file/d/15yOEsGIQIl6BelzG_Hy0LI2saJDvYwQA/view">Apartamento
+                                    tipo B</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link active" href="#zonasComunes">Zonas comunes</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#planos">Descargas</a></li>
                 </ul>
             </div>
         </div>
@@ -50,8 +90,7 @@
 
         <div class="row">
             <div class="col-md-6 px-5 text-center mt-5">
-                <h2 class="titulo" id="titleNot">EDIFICIO CERVANTES</h2>
-                <h3 class="mt-2 border-bottom mb-1">Un edificio donde la elegancia atemporal se encuentra con el confort
+                <h3 class="mt-2 mb-1">Un edificio donde la elegancia atemporal se encuentra con el confort
                     contemporáneo</h3>
                 <img src="./mediaC/marengo_overlay.png" alt="Marengo Inmobiliaria"
                     style="width: 300px; height: 300px; display: block; margin: 0 auto;" class="mt-2">
@@ -60,30 +99,38 @@
             </div>
 
             <div class="col-md-6 mt-5">
-                <!--Texto-->
-                <h2 class="titulo" id="apartamentos">APARTAMENTOS DEL EDIFICIO CERVANTES</h2>
+                <h2 class="titulo border-bottom mb-3" id="titleNot">EDIFICIO CERVANTES</h2>
+                <!--Añadir aquí-->
+                <div class="info-box mx-auto">
+                    <ul>
+                        <li><strong>Estilo:</strong> Clásico</li>
+                        <li><strong>Tipo:</strong> Apartamento</li>
+                        <li><strong>Alturas:</strong> 4 (PB + 3)</li>
+                        <li><strong>Viviendas:</strong> 18</li>
+                    </ul>
+                </div>
                 <h3>Selecciona tu escalera y descubre las opciones disponibles</h3>
                 <!--Columna escalera 1-->
                 <div class="col-md-6 mx-auto">
                     <h3 class="fw-bold mb-2 border-bottom">Escalera 1</h3>
                     <ul class="list-unstyled apartment-list">
                         <li class="d-flex justify-content-between align-items-center mb-2">
-                            <span>Apartamento 1A</span>
+                            <span>Apartamento tipo A</span>
                             <a href="https://drive.google.com/file/d/1pefoIiYcZAWyAsyfqTC7esPdrGauBZMP/view"
                                 class="btn btn-modern-overWhite btn-sm">Ver</a>
                         </li>
                         <li class="d-flex justify-content-between align-items-center mb-2">
-                            <span>Apartamento 1B</span>
+                            <span>Apartamento tipo B</span>
                             <a href="https://drive.google.com/file/d/13JufAZ5yWKQG0GyLp57OydBzvFAzIdtN/view"
                                 class="btn btn-modern-overWhite btn-sm">Ver</a>
                         </li>
                         <li class="d-flex justify-content-between align-items-center mb-2">
-                            <span>Apartamento 1C</span>
+                            <span>Apartamento tipo C</span>
                             <a href="https://drive.google.com/file/d/1bEVqbZFvk3DWnUrvlsgY9gDFDb0k0Xh9/view"
                                 class="btn btn-modern-overWhite btn-sm">Ver</a>
                         </li>
                         <li class="d-flex justify-content-between align-items-center mb-2">
-                            <span>Apartamento 1D</span>
+                            <span>Apartamento tipo D</span>
                             <a href="https://drive.google.com/file/d/1ihjzZ1ecFiuroCs4LX5zQn4vouiNIUiq/view"
                                 class="btn btn-modern-overWhite btn-sm">Ver</a>
                         </li>
@@ -94,12 +141,12 @@
                     <h3 class="fw-bold mb-2 border-bottom">Escalera 2</h3>
                     <ul class="list-unstyled apartment-list">
                         <li class="d-flex justify-content-between align-items-center mb-2">
-                            <span>Apartamento 2A</span>
+                            <span>Apartamento tipo A</span>
                             <a href="https://drive.google.com/file/d/1LiFCsuWg1AzB9C_el3Ee3S-cP7S4MC2p/view"
                                 class="btn btn-modern-overWhite btn-sm">Ver</a>
                         </li>
                         <li class="d-flex justify-content-between align-items-center mb-2">
-                            <span>Apartamento 2B</span>
+                            <span>Apartamento tipo B</span>
                             <a href="https://drive.google.com/file/d/18NzIkRu3TnbPLLyBrvNpWaxbfcaYp2LO/view"
                                 class="btn btn-modern-overWhite btn-sm">Ver</a>
                         </li>
@@ -112,74 +159,96 @@
     </div>
 
     <!--Siguiente sección (fotos y pdf's)-->
-    <section class="py-3 px-3" id="planos">
+    <section class="py-3 px-3 footerOne" id="zonasComunes">
         <div class="container">
+
             <div class="row py-3 mt-3 border-start">
-                <h3>PLANOS Y BOCETOS</h3>
+                <h3>ZONAS COMUNES</h3>
             </div>
-            <div class="row px-3 py-3">
-                <div class="col">
-                    <img src="./mediaC/plano_garaje.jpg" alt="garage" class="img-fluid">
-                </div>
-            </div>
-            <div class="row px-3 py-3">
-                <div class="col">
-                    <img src="./mediaC/patio.interior.jpg" alt="garage" class="img-fluid">
-                </div>
-            </div>
-            <div class="row px-3 py-3">
-                <div class="col-md-6">
-                    <img src="./mediaC/10. Foto 7.PNG" alt="" class="img-fluid">
-                </div>
-                <div class="col-md-6">
-                    <img src="./mediaC/9. Foto 6.PNG" alt="" class="img-fluid">
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!--Siguiente sección (fotos y pdf's)-->
-    <section class="py-3 px-3 footerOne">
-        <div class="container">
             <div class="row px-3 py-3">
                 <div class="col">
-                    <img src="./mediaC/patio_interior_superior.jpg" alt="garage" class="img-fluid">
-                </div>
-            </div>
-            <div class="row px-3 py-3">
-                <div class="col">
-                    <img src="./mediaC/patio_interior_accesos.jpg" alt="garage" class="img-fluid">
-                </div>
-            </div>
-            <div class="row px-3 py-3">
-                <div class="col-md-6">
-                    <img src="./mediaC/652 sin título_20251118194021.PNG" alt="" class="img-fluid">
-                </div>
-                <div class="col-md-6">
-                    <img src="./mediaC/652 sin título_20251118195454.PNG" alt="" class="img-fluid">
-                </div>
-            </div>
-        </div>
-    </section>
+                    <div class="plano-info-box">
+                        <h4>PLANO PB</h4>
 
-    <!--Siguiente sección (fotos y pdf's)-->
-    <section class="py-3 px-3">
-        <div class="container">
-            <div class="row px-3 py-3">
-                <div class="col-md-6">
-                    <img src="./mediaC/653 sin título_20251119110820.PNG" alt="" class="img-fluid">
+                        <h5>Cafetería</h5>
+                        <p>La planta baja del edificio contará con una gran cafetería de gestión privada.</p>
+
+                        <h5>Zaguanes</h5>
+                        <p>El hall de entrada, con una puerta exterior espectacular en dimensiones y diseño, da acceso a
+                            un espacio
+                            señorial con techo a doble altura.</p>
+
+                        <h5>Plaza Garaje</h5>
+                        <p>Amplia plaza de garaje con luz natural proveniente del lucernario del patio y del patio de
+                            luces.</p>
+
+                        <h5>Trastero</h5>
+                        <p>En esta planta se encuentran también los trasteros individuales, con acceso desde los
+                            zaguanes.</p>
+                    </div>
+
+                    <img src="./mediaC/plano_garaje.jpg" alt="plano_pb" class="img-fluid">
                 </div>
-                <div class="col-md-6">
-                    <img src="./mediaC/IMG_4528.PNG" alt="" class="img-fluid">
+            </div>
+
+            <div class="row px-3 py-3">
+                <div class="col">
+                    <div class="plano-info-box">
+                        <h4>PLANO ENTRESUELO</h4>
+
+                        <h5>Sala Común</h5>
+                        <p>Sala polivalente para eventos, cumpleaños o zona de juegos y recreo común.</p>
+
+                        <h5>PATIO Interior</h5>
+                        <p>Acceso al patio-jardín del edificio, con porches para disfrutar del aire libre a diario.</p>
+                    </div>
+
+                    <img src="./mediaC/patio.interior.jpg" alt="plano_entresuelo" class="img-fluid">
+                </div>
+            </div>
+
+            <div class="row px-3 py-3">
+                <div class="col">
+                    <div class="plano-info-box">
+                        <h4>PLANO VIVIENDAS</h4>
+                        <p>Las plantas de 1 a 3 están destinadas a viviendas. El edificio se divide en dos portales
+                            interconectados:
+                            en planta baja por los garajes, en entreplanta por el patio y la sala común, y la cubierta
+                            es totalmente común.</p>
+                    </div>
+
+                    <img src="./mediaC/patio_interior_superior.jpg" alt="plano_viviendas" class="img-fluid">
+                </div>
+            </div>
+
+
+            <div class="row px-3 py-3">
+                <div class="col">
+                    <div class="plano-info-box">
+                        <h4>PLANO TERRAZA</h4>
+
+                        <h5>Terraza</h5>
+                        <p>Zona de terrazas “chill-out” con espacios cubiertos para disfrutar con familia y amigos.</p>
+                    </div>
+
+                    <img src="./mediaC/patio_interior_accesos.jpg" alt="plano_terraza" class="img-fluid">
+                </div>
+            </div>
+
+            <div class="row px-3 py-3">
+                <div class="col">
+                    <img src="./mediaC/9. Foto 6.PNG" alt="garage" class="img-fluid">
                 </div>
             </div>
             <div class="row px-3 py-3">
-                <div class="col-md-6">
-                    <img src="./mediaC/666 sin título_20251202103947.PNG" alt="" class="img-fluid">
+                <div class="col">
+                    <img src="./mediaC/10. Foto 7.PNG" alt="garage" class="img-fluid">
                 </div>
-                <div class="col-md-6 text-center">
-                    <img src="./mediaC/662 sin título_20251128120627.jpg" alt="" class="img-fluid"
-                        style="height:500px;">
+            </div>
+            <div class="row px-3 py-3">
+                <div class="col">
+                    <img src="./mediaC/11. Foto 8.PNG" alt="garage" class="img-fluid">
                 </div>
             </div>
         </div>
