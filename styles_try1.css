@@ -113,6 +113,18 @@ body {
     margin-left: 8vh;
 }
 
+@media (min-width: 780px) {
+    #titleNot {
+        display: none;
+    }
+}
+
+@media (max-width: 780px) {
+    #titleYes {
+        display: none;
+    }
+}
+
 
 .dropdown-item:hover {
     color: #0056b3;
