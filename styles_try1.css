@@ -105,12 +105,6 @@ body {
     color: white !important;
 }
 
-@media (max-width: 992px) {
-    .custom-navbar {
-        height: 15vh;
-    }
-}
-
 #navbarSupportedContent {
     margin-right: 8vh;
 }
